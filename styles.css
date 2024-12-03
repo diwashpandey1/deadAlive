@@ -1,0 +1,96 @@
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  margin: 0;
+  padding: 20px;
+}
+
+#note {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 123, 0);
+  color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 1000;
+  display: block;
+}
+
+#cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+
+#note p {
+  margin-top: 20px;
+}
+
+
+h3{
+  font-size: 4rem;
+
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.heading {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ff4500;
+  margin-bottom: 20px;
+}
+.storyBody {
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+.highlight {
+  color: #ffa500;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.emphasis {
+  color: #dc143c;
+  font-style: italic;
+}
+
+strong {
+  color: #00ffea;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+footer p a {
+  text-decoration: underline;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #833ab4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width:700px) {
+  #note {
+    width: 70%;
+  }
+}
